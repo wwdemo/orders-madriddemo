@@ -30,7 +30,7 @@ EXPOSE  8080
 ENTRYPOINT ["a8sidecar", "--register", "--proxy", "node", "/app/app.js"]
 
 ## Inject environment variables into the microservices container
-ENV A8_SERVICE=catalog:v1
+ENV A8_SERVICE=orders:v1
 ENV A8_ENDPOINT_PORT=8080
 ENV A8_ENDPOINT_TYPE=http
 ENV A8_REGISTRY_URL=http://dev-a8-registry-CBJ-123.mybluemix.net
