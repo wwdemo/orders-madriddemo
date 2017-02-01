@@ -24,7 +24,7 @@ RUN ls -al /app/.
 RUN cd /app && npm install  
 # ADD app.js /app/app.js
 # ENV WEB_PORT 80
-EXPOSE  80
+EXPOSE  8080
 
 ## script_to_launch_sidecar_and_app
 ENTRYPOINT ["a8sidecar", "--register", "--proxy", "node", "/app/app.js"]

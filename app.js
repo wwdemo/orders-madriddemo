@@ -23,6 +23,6 @@ app.get('/orders', orders.list);
 //app.get('/orders/:id', orders.find);
 app.post('/orders', orders.create);
 
-app.listen(80, appEnv.bind);
-console.log('App started on ' + 80 + ':' + appEnv.port);
+app.listen(8080, appEnv.bind);
+console.log('App started on ' + appEnv.bind + ':' + 8080);
 
